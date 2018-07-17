@@ -174,7 +174,7 @@ class Filter(object):
         if hasUnit(slamb) & hasUnit(w):
             return w.to(str(slamb.units)).magnitude
         else:
-            print("Warning: assuming units are consistent")
+            #print("Warning: assuming units are consistent")
             return self._wavelength
 
     def getFlux(self, slamb, sflux, axis=-1):
